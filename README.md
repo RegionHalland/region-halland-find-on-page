@@ -10,6 +10,8 @@ Nedan följer instruktioner hur du kan använda pluginet "region-halland-find-on
 Denna plugin hämtar ut alla h2, h3 och h4-rubriker och placerar dom i en array.
 Är "Modularity" installerad hämtas även alla rubriker därifrån och läggs i slutet av arrayen
 
+OBS! Du behöver även ha installerat och aktiverat Region Hallands plugin "region-halland-prepare-the-content" för att denna plugin ska fungera.
+
 
 ## Installation och aktivering
 
