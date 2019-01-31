@@ -1,0 +1,13 @@
+{
+    "name": "regionhalland/region-halland-find-on-page",
+    "description": "Front-end-plugin som skapar en array för 'Hitta på sidan'",
+    "type": "wordpress-plugin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Roland Hydén",
+            "email": "Roland.Hyden@Regionhalland.se"
+        }
+    ],
+    "require": {}
+}
