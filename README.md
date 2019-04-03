@@ -175,8 +175,11 @@ if ($("body.page-template-default")[0]){
 
 ## Versionhistorik
 
-### 1.0.1
+### 1.1.0
 - Lagt till classnamn med tag
+
+### 1.0.1
+- Förbättrad readme
 
 ### 1.0.0
 - Första version
