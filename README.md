@@ -88,11 +88,13 @@ OBS! Justera så att du hämtar aktuell version.
 array (size=2)
   0 => 
     array (size=3)
+      'class' => string 'content-nav__item-level--2' (length=26)
       'tag' => string 'h2' (length=2)
       'slug' => string 'lorem-ipsum' (length=11)
       'content' => string 'Lorem ipsum' (length=11)
   1 => 
     array (size=3)
+      'class' => string 'content-nav__item-level--2' (length=26)
       'tag' => string 'h2' (length=2)
       'slug' => string 'lorem-ipsum-dolares' (length=19)
       'content' => string 'Lorem ipsum dolares' (length=19)
@@ -172,6 +174,9 @@ if ($("body.page-template-default")[0]){
 
 
 ## Versionhistorik
+
+### 1.0.1
+- Lagt till classnamn med tag
 
 ### 1.0.0
 - Första version

@@ -6,7 +6,7 @@
 	/*
 	Plugin Name: Region Halland Find on Page
 	Description: Front-end-plugin som skapar en array för "Hitta på sidan"
-	Version: 1.0.0
+	Version: 1.0.1
 	Author: Roland Hydén
 	License: MIT
 	Text Domain: regionhalland
@@ -38,6 +38,7 @@
                     $toSlug     = trim($toSlug);
                     $slug       = strtolower($toSlug);
                     array_push($findOnPage, array(
+                       'class' => "content-nav__item-level--" . substr($tmpValue,2,1),
                        'tag' => substr($tmpValue,1,2),
                        'slug' => $slug,
                        'content' => $tmpContent
@@ -57,6 +58,7 @@
                     foreach ($moduleList as $module) {
                         $module = get_post($module['postid']);
                         array_push($findOnPage, array(
+                           'class' => "content-nav__item-level--2",
                            'tag' => 'h2',
                            'slug' => sanitize_title($module->post_title),
                            'content' => $module->post_title
