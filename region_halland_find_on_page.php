@@ -6,9 +6,9 @@
 	/*
 	Plugin Name: Region Halland Find on Page
 	Description: Front-end-plugin som skapar en array för "Hitta på sidan"
-	Version: 1.1.0
+	Version: 1.2.0
 	Author: Roland Hydén
-	License: MIT
+	License: GPL-3.0
 	Text Domain: regionhalland
 	*/
 

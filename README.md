@@ -13,6 +13,13 @@ Denna plugin hämtar ut alla h2, h3 och h4-rubriker och placerar dom i en array.
 OBS! Du behöver även ha installerat och aktiverat Region Hallands plugin "region-halland-prepare-the-content" för att denna plugin ska fungera.
 
 
+## Licensmodell
+
+Denna plugin använder licensmodell GPL-3.0. Du kan läsa mer om denna licensmodell via den medföljande filen:
+```sh
+LICENSE (https://github.com/RegionHalland/region-halland-find-on-page/blob/master/LICENSE)
+```
+
 ## Installation och aktivering
 
 ```sh
@@ -174,6 +181,10 @@ if ($("body.page-template-default")[0]){
 
 
 ## Versionhistorik
+
+### 1.2.0
+- Uppdaterat med information om licensmodell
+- Bifogat fil med licensmodell
 
 ### 1.1.0
 - Lagt till classnamn med tag
