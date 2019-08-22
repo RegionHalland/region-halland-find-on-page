@@ -97,13 +97,13 @@ array (size=2)
     array (size=3)
       'class' => string 'content-nav__item-level--2' (length=26)
       'tag' => string 'h2' (length=2)
-      'slug' => string 'lorem-ipsum' (length=11)
+      'slug' => string 'lorem-ipsum-1' (length=11)
       'content' => string 'Lorem ipsum' (length=11)
   1 => 
     array (size=3)
       'class' => string 'content-nav__item-level--2' (length=26)
       'tag' => string 'h2' (length=2)
-      'slug' => string 'lorem-ipsum-dolares' (length=19)
+      'slug' => string 'lorem-ipsum-dolares-2' (length=19)
       'content' => string 'Lorem ipsum dolares' (length=19)
 ```
 
@@ -181,6 +181,10 @@ if ($("body.page-template-default")[0]){
 
 
 ## Versionhistorik
+
+### 2.0.0
+- Lagt till löpnummer på slug
+- Tagit bort allt stöd för Modularity
 
 ### 1.2.0
 - Uppdaterat med information om licensmodell
