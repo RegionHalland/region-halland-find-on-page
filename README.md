@@ -182,6 +182,9 @@ if ($("body.page-template-default")[0]){
 
 ## Versionhistorik
 
+### 2.1.0
+- Ersätter "," och "/" med ""
+
 ### 2.0.0
 - Lagt till löpnummer på slug
 - Tagit bort allt stöd för Modularity
