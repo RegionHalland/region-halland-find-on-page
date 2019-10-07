@@ -182,6 +182,9 @@ if ($("body.page-template-default")[0]){
 
 ## Versionhistorik
 
+### 2.2.0
+- Lagt till länklistor i findonpage-arrayen
+
 ### 2.1.0
 - Ersätter "," och "/" med ""
 
