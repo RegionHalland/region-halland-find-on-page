@@ -6,7 +6,7 @@
     /*
     Plugin Name: Region Halland Find on Page
     Description: Front-end-plugin som skapar en array för "Hitta på sidan"
-    Version: 2.2.0
+    Version: 2.3.0
     Author: Roland Hydén
     License: GPL-3.0
     Text Domain: regionhalland
@@ -76,13 +76,11 @@
                     $strPostName = $arrUrl[$countUrl-2];
                     
                     // Funktion som returnerar postID basterat på post_name
-                    $postID = get_region_halland_find_on_page_post_id($strPostName);
-                    
-                    // Hämta hela posten
-                    $post = get_post($postID);
+                    $arrData = get_region_halland_find_on_page_post_data($strPostName);
                     
                     // Post title från posten
-                    $postTitle = $post->post_title;
+                    $postID = $arrData['ID'];
+                    $postTitle = $arrData['post_title'];
                     
                     // Kontrollera om det finns " - " i posten
                     $checkPosTitle = stripos($postTitle, " - ");
@@ -143,14 +141,14 @@
                     
     }
 
-    function get_region_halland_find_on_page_post_id($post_name) {
+    function get_region_halland_find_on_page_post_data($post_name) {
         
         // Databas connection
         global $wpdb; 
 
         // Select
         $sql = "";
-        $sql .= "SELECT ID FROM wp_posts ";
+        $sql .= "SELECT ID, post_title FROM wp_posts ";
         
         // Where
         $sql .= "WHERE ";
@@ -161,13 +159,19 @@
         $sql .= "post_name = '$post_name' ";
 
         // Get result
-        $arrID = $wpdb->get_row($sql, ARRAY_A);
+        $arrData = $wpdb->get_row($sql, ARRAY_A);
+
+        // Get variables from result
+        $myID = intval($arrData['ID']);
+        $myTitle = trim($arrData['post_title']);
         
-        // Get ID from result
-        $myID = intval($arrID['ID']);
+        // Prepare data
+        $myData = array();
+        $myData['ID'] = $myID;
+        $myData['post_title'] = $myTitle;
         
-        // Return id
-        return $myID;
+        // Return data
+        return $myData;
             
     }
 

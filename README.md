@@ -182,6 +182,9 @@ if ($("body.page-template-default")[0]){
 
 ## Versionhistorik
 
+### 2.3.0
+- Byggde om hela uthämtningen av länklistor
+
 ### 2.2.0
 - Lagt till länklistor i findonpage-arrayen
 
